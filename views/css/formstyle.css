@@ -1,0 +1,162 @@
+body{
+    display: flex;
+    align-items: center;
+    background: #a5a7a8;
+    /* justify-content: center; */
+}
+
+
+
+#Sign_up{
+    display: none;
+}
+
+.container{
+    width: 90%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.image{
+    width: 30em;
+    /* border: 1px solid black; */
+}
+
+.image img{
+    width: 100%;
+    /* height: 100%; */
+}
+
+.form-box{
+    width: 500px;
+    height: 600px;
+    position: relative;
+    margin-left: 66px;
+    padding: 10px;
+    overflow: hidden;
+    background: #DDDDDD;
+    border-radius: 15px;
+}
+
+.button-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    background: #C4C4C4;
+    border-radius: 5px;
+
+}
+.toggle-btn{
+    position: relative;
+    padding: 10px 30px;
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+.active{
+    /* width: 100px; */
+    height: 100%;
+    border-radius: 10px;
+    transition: 0.3s;
+    background: #C68B59;
+
+}
+.input-group-Login{
+    position: absolute;
+    display: flex;
+    left: 20%;
+    flex-direction: column;
+    justify-content: center;   
+    width: 60%;
+    margin: auto;
+}
+
+.form-field:not(:nth-child(2)){
+    margin: 30px 0;
+}
+
+.check{
+    display: flex;
+    align-items: top;
+    align-self: flex-end;
+    margin: 20px 0;
+}
+
+.input-group-Sign_up{
+    top: 120px;
+    width: 70%;
+    margin: auto;
+    transition: 0.3s;
+}
+
+.input-field{
+    padding: 10px 5px;
+    margin: 0px 0;
+    width: 100%;
+    height: 15px;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    /* background: #FFFFFF; */
+    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+
+}
+.submit-button{
+    padding: 10px 30px;
+    margin: auto;
+    width: 100%;
+    border: 0;
+    outline: none;
+    display: block;
+    cursor: pointer;
+    background: #0C4271;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: white;
+}
+
+
+span{
+    display: block;
+    color: black;
+    font-size: 18px;
+   
+}
+#login{
+    left: 50px;
+}
+#login input{
+    color: black;
+    font-size: 20;
+}
+
+#Sign_up{
+    left: 450px;
+
+}
+#register input{
+    color: black;
+    font-size: 15;
+}
+
+

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/formstyle.css" />
+    <title>Registeration Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="flex">
+          <div class="form-box">
+            <div class="button-box">
+              <button type="button" class="toggle-btn active" id="login_toggle">Log in</button>
+              <button type="button" class="toggle-btn" id="signup_toggle">Sign up</button>
+
+            </div>
+
+            <!-- creating a login form -->
+            <form id="Login" class="input-group-Login" action="../actions/login.php" method="post">
+              <div class="form-field">
+
+                <label>Email</label><br />
+                <input type="email" name="email" id="lemail" class="input-field" />
+                <span id="lemailerror" class="text-danger font-weight-bold"></span>
+              </div>
+
+              <div class="form-field">
+                <label>Password</label><br />
+                <input type="password" name="password" id="lpassword" class="input-field" />
+                <span id="lpassworderror" class="text-danger font-weight-bold"></span>
+              </div>
+
+              <div class="check">
+                <a href="#">Forgot Password?</a>
+              </div>
+              <button type="submit" name="submit" class="submit-button" onclick="return loginValidation()">Log in</button><br />
+            </form>
+
+            <!-- creating a registration form -->
+            <form id="Sign_up" class="input-group-Sign_up" action="../actions/register.php" method="post">
+              <div class="form-field">
+
+                <label>Full name/Company name</label>
+                <input type="text" name="fullname" id="name" class="input-field" />
+                <span id="nameerror" class="text-danger font-weight-bold"></span>
+              </div>
+
+              <div class="form-field">
+                <label>Email</label>
+                <input type="email" name="email" id="email" class="input-field" />
+                <span id="emailerror" class="text-danger font-weight-bold"></span>
+              </div>
+
+              <div class="form-field">
+                <label>Phone number</label>
+                <input type="text" name="number" id="number" class="input-field" />
+                <span id="numbererror" class="text-danger font-weight-bold"></span>
+              </div>
+
+              <div class="form-field">
+                <label>Password</label>
+                <input type="password" name="password" id="password" class="input-field" />
+                <span id="passworderror" class="text-danger font-weight-bold"></span>
+              </div>
+
+              <div class="check">
+                <input type="checkbox" class="check-box" />
+                <span>I agree to the terms and conditions of your services</span>
+              </div>
+              <button type="submit" name="submit" class="submit-button" onclick="return signUpValidation()">Sign up</button>
+
+            </form>
+
+          </div>
+
+        <div class="image">
+          <img src="unika/unika-html/img/pngwing.com (39).png"/>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- including javascript file -->
+    <script src="./javaScript/register.js"></script>
+
+    </script>
+
+  </body>
+
+</html>
+

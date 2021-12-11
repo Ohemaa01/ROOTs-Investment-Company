@@ -1,0 +1,27 @@
+.inpit-group-form{
+    margin: 15px;
+    padding: 30px;
+}
+
+.form-control{
+    padding: 10px 5px;
+    margin: 0px 0;
+    width: 500px;
+    height: 15px;
+}
+.submit-button{
+    width: 350px;
+    margin: 30px;
+    color: white;
+    background-color: rgb(65, 134, 134);
+}
+
+.upload{
+margin: 15px;
+margin-left: auto;
+width: 20px;
+}
+
+.form-control{
+    height: 40px;
+}
